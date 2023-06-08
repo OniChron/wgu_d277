@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
   }
   a {
     text-decoration: none;
@@ -24,20 +24,19 @@
   .nav-links a {
     color: #fff;
   }
-  /* LOGO */
+  /* Text of state name */
   .left_text {
-    font-size: 32px;
+    font-size: 2.5rem;
   }
   /* NAVBAR MENU */
   .navbar .menu {
     display: flex;
     gap: 1em;
-    font-size: 18px;
-    box-sizing: border-box;
+    font-size: 1.3rem;
   }
   .menu li:hover {
     background-color: #4c9e9e;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s ease;
   }
   .menu li {
@@ -59,7 +58,7 @@
     margin-top: 10px;
   }
   .dropdown li {
-    padding: 0.5em 1em;
+    padding: 1em 1em;
     width: 8em;
     text-align: center;
   }
@@ -68,13 +67,6 @@
   }
   .cities:hover .dropdown {
     display: block;
-  }
-  /* RESPONSIVE NAVBAR MENU STARTS */
-
-/* CHECKBOX HACK */
-
-input[type=checkbox] {
-    display: none;
   }
   /* HAMBURGER MENU */
   .hamburger {
@@ -85,7 +77,6 @@ input[type=checkbox] {
   /* APPLYING MEDIA QUERIES */
   @media (max-width: 768px) {
    .menu {
-      display:none;
       position: absolute;
       background-color:teal;
       right: 0;
@@ -101,12 +92,6 @@ input[type=checkbox] {
     .menu li + li {
       margin-top: 12px;
     }
-    input[type=checkbox]:checked ~ .menu {
-      display: block;
-    }
-    .hamburger {
-      display: block;
-    }
     .dropdown {
       left: 50%;
       top: 30px;
@@ -115,4 +100,53 @@ input[type=checkbox] {
     .dropdown li:hover {
       background-color: #4c9e9e;
     }
+  }
+  .state_flag {
+    padding: 15px;
+    height: 250px;
+    width: 250px;
+    position: relative;
+  }
+  .state_flag img {
+    height: 200px;
+    width: 250px;
+  }
+  .state_map {
+    padding: 15px;
+    height: 420px;
+    width: 250px;
+    position: relative;
+  }
+  .state_map img {
+    width: 250px;
+  }
+  .images {
+    float: left;
+    margin-right: 2rem;
+  }
+  .main {
+    padding-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .title_main {
+    text-align: center;
+    padding: 20px;
+  }
+  .bottom_text {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .title_two {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .state_seal {
+    float: right;
+    position: relative;
+    padding-right: 700px;
+  }
+  .state_seal img {
+    width: 500px
   }
