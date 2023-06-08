@@ -5,8 +5,6 @@
   }
   body {
     font-family:'Courier New', Courier, monospace;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 37%, rgba(6,77,166,1) 55%, rgba(0,212,255,1) 77%, rgba(255,255,255,1) 87%, rgba(96,128,221,0.12105511149772408) 100%, rgba(255,255,255,1) 100%);
   }
   a {
     text-decoration: none;
@@ -137,7 +135,6 @@
     padding-top: 15px;
     font-size: 1.5rem;
     font-weight: 600;
-    color: black;
   }
   .title_main {
     text-align: center;
@@ -170,7 +167,6 @@
   .history {
     padding: 15px;
     font-weight: 500;
-    color: bisque;
   }
   .history h3 {
     text-align: center;
@@ -181,4 +177,11 @@
     column-count: 2;
     object-position: 15px center;
     margin-top: 25px;
+  }
+  .activities {
+    text-align: center;
+  }
+  .activities ul li{
+    text-decoration:none;
+    display: inline-block;
   }
