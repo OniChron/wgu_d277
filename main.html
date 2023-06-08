@@ -1,21 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8 en">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>State of Indiana</title>
     <link rel="stylesheet" href="./global.css"/>
 </head>
 <body>
-        <header>
-            The State of Indiana
-        </header>
-    <nav>
-            <a href="./main.html">Home</a>
-            <a href="./capital.html">Capital</a>
-            <a href="./city_one.html">city_one</a>
-            <a href="./city_two.html">city_two</a>
+    <nav class="navbar">
+        <!--state name-->
+        <div class="left_text">The State of Indiana</div>
+        <!--nav menu-->
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!--nav menu-->
+            <div class="menu">
+                <li><a href="./main.html">Home</a></li>
+                <li class="cities">
+                    <a href="">Cities</a>
+                    <ul class="dropdown">
+                        <li><a href="Cities/capital.html">Indianapolis</a></li>
+                        <li><a href="Cities/city_one.html">Valparaiso</a></li>
+                        <li><a href="Cities/city_two.html">South Bend</a></li>
+                    </ul>
+                </li>
+                <li></li>
+                <li></li>
+            </div>
+        </ul>
     </nav>
     <!-- Images will be located on the right side of webpage-->
         <div class="state_flag">
@@ -25,7 +39,7 @@
             <img src="src/indiana_state_map.jpg"/>
         </div>
     <!--Section will be center right of page-->
-        <section class="main_section_one">
+        <section class="main">
             <h2>
                 <a href="https://www.britannica.com/place/Indiana-state">
                     About Indiana
@@ -39,7 +53,7 @@
                 Indiana was admitted on December 11, 1816, as the 19th state of the union. Its capital has been at Indianapolis since 1825.
             </p>
             <p>
-                Today Indiana’s economy is based primarily on services, manufacturing, and, to a much lesser extent, agriculture.
+                Today Indianas economy is based primarily on services, manufacturing, and, to a much lesser extent, agriculture.
                 Its northern areas lie in the mainstream of the industrial belt that extends from Pennsylvania and New York to Illinois.
                 Agricultural activity is heaviest in the central region, which is situated in the Corn Belt, which stretches from Ohio to Nebraska.
             </p>
@@ -62,20 +76,23 @@
         </section>
     <!--Aside will more centered then the Section tag-->
         <aside>
-            <h2>Indiana State History</h2>
-            <p>Stuff about state history...</p>
+            <h2>
+                <a href="https://indianahistory.org/education/education-resources/educator-resources/fun-facts/#:~:text=Indiana%20became%20a%20state%20on,capital%20was%20moved%20to%20Indianapolis.">
+                Indiana State History
+                </a>
+            </h2>
+            <p>
+                Indiana became a state on Dec. 11, 1816, when President James Madison signed the congressional resolution admitting Indiana to the Union.
+                Indiana is the 19th state. Corydon remained the first state capital until 1825, when the capital was moved to Indianapolis. Indiana’s first
+                governor was Jonathan Jennings.
+            </p>
         </aside>
-    <!--
-    Go back to bottom navigation to place images of
-    city instead of links like the top
-    -->
+        <aside class="state_seal">
+            <img src="/src/Indiana_state_seal.jpg"/>
+        </aside>
+    <!--The author and extra info about what class-->
     <footer>
-        <nav>
-                <a href="./main.html">Home</a>
-                <a href="./capital.html">Capital</a>
-                <a href="./city_one.html">city_one</a>
-                <a href="./city_two.html">city_two</a>
-        </nav>
+        
     </footer>
 </body>
 </html>
