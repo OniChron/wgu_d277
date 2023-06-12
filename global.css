@@ -180,8 +180,26 @@
   }
   .activities {
     text-align: center;
+    position: relative;
   }
   .activities ul li{
     text-decoration:none;
     display: inline-block;
+    text-align: center;
+  }
+  .left_aside {
+    float: left;
+    position: relative;
+  }
+  .left_aside img {
+    width: 400px;
+    height: 200px;
+  }
+  .right_aside {
+    float: right;
+    position: relative;
+  }
+  .right_aside img {
+    width: 400px;
+    height: 200px;
   }
