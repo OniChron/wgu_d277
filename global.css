@@ -5,16 +5,62 @@
   }
   body {
     font-family:'Courier New', Courier, monospace;
-    padding: 15px;
+    padding: 0px .3vh 0 .3vh;
+    background-image: url(src/Indiana_state_seal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #777;
+    background-size: contain;
+    background-blend-mode: color-burn;
+    color: #fff;
   }
-  a {
-    text-decoration: none;
-  }
+  /* Start of the navbar */
   li {
     list-style: none;
   }
+  .navbar {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url(src/indiana_flag.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgb(9, 9, 99);
+    background-blend-mode: luminosity;
+    color: #fff;
+  }
+
+  .navbar .header_top {
+    font-size: 2.5vh;
+    font-weight: 600;
+    word-spacing: 10px;
+  }
+
+  .navbar .header_btm {
+    font-size: 6vh;
+    font-weight: 700;
+  }
+
+  .nav_links a {
+    color: #fff;
+  }
+
+  .nav_links {
+    display: inline;
+  }
+
+  .nav_links .menu {
+    display: flex;
+  }
+
+  .navbar-toggle {
+
+  }
   /* NAVBAR STYLING STARTS */
-.navbar {
+/* .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,12 +71,8 @@
   .nav-links a {
     color: #fff;
   }
-  /* Text of state name */
-  .left_text {
-    font-size: 2.5rem;
-  }
   /* NAVBAR MENU */
-  .navbar .menu {
+  /*.navbar .menu {
     display: flex;
     gap: 1em;
     font-size: 1.3rem;
@@ -42,16 +84,16 @@
   }
   .menu li {
     padding: 5px 14px;
-  }
+  } */
   /* DROPDOWN MENU */
-  .cities {
+  /*.cities {
     position: relative;
   }
   .dropdown {
     background-color: rgb(1, 139, 139);
     padding: 1em 10;
     position: fixed; /*WITH RESPECT TO PARENT*/
-    display: none;
+    /*display: none;
     border-radius: 8px;
     top: 35px;
   }
@@ -68,15 +110,15 @@
   }
   .cities:hover .dropdown {
     display: block;
-  }
+  } */
   /* HAMBURGER MENU */
-  .hamburger {
+  /*.hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
   }
   /* APPLYING MEDIA QUERIES */
-  @media (max-width: 768px) {
+  /*@media (max-width: 768px) {
    .menu {
       position: absolute;
       background-color:teal;
@@ -101,7 +143,7 @@
     .dropdown li:hover {
       background-color: #4c9e9e;
     }
-  }
+  } */
   .city_name {
     text-align: center;
     font-size: 2rem;
@@ -213,32 +255,39 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     word-spacing: 10px;
     font-size: 10vh;
+    font-style: oblique;
+    color: rgb(255, 255, 255);
   }
   .form_field {
     border-style: solid;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: rgba(242, 242, 242, 0.543);
+    padding: 10vh 20vh 10vh 20vh;
+    margin: 0vh 15vh 0 15vh;
     text-align: left;
     font-size: 5vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
   }
   .req {
     color: red;
+    font-size: 4vh;
   }
   input:focus {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.763);
+    border: 3px solid #555;
   }
+
   input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    border:1px solid #ccc;
+    border:1px solid #727272;
     border-radius: 4px;
     box-sizing: border-box;
   }
   input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #727272;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -250,7 +299,7 @@
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    border:1px solid #ccc;
+    border:1px solid #727272;
     border-radius: 4px;
     box-sizing: border-box;
   }
