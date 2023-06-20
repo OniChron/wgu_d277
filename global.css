@@ -5,6 +5,7 @@
   }
   body {
     font-family:'Courier New', Courier, monospace;
+    padding: 15px;
   }
   a {
     text-decoration: none;
@@ -205,12 +206,62 @@
     width: 400px;
     height: 200px;
   }
-  .form {
-    float: right;
-    position: relative;
-    padding-right: 300px;
-    padding-top: 100px;
+  /* This section is for the contact.html form section */
+  .form_title {
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 10px;
+    font-size: 10vh;
+  }
+  .form_field {
     border-style: solid;
-    padding-left: 300px;
-    padding-bottom: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+    font-size: 5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .req {
+    color: red;
+  }
+  input:focus {
+    background-color: #fff;
+  }
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .commentbox {
+    padding-bottom: 10px;
+    position: relative;
+  }
+  /* sumbit button customization */
+  .submit_btn {
+    font-size: 4vh;
+    text-align: right;
+    box-shadow: #777;
+    pointer-events: auto;
   }
