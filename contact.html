@@ -30,7 +30,7 @@
     <h1 class="form_title">Contact Form</h1>
     <form class="form_field">
         <div class="firstname_box">
-            <label for="first_name">First Name</label>
+            <label for="first_name">First Name<span class="req">*</span></label>
             <input
                 type="text"
                 id="first_name"
@@ -41,7 +41,7 @@
                 title="First name">
         </div>
         <div class="lastname_box">
-            <label for="last_name">Last Name:</label>
+            <label for="last_name">Last Name:<span class="req">*</span></label>
             <input
                 type="text"
                 id="last_name"
@@ -52,24 +52,26 @@
                 title="Last name">
         </div>
         <div class="emailbox">
-            <label for="email">Enter email:</label>
+            <label for="email">Enter email:<span class="req">*</span></label>
             <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="john.smith@email.com"
                 pattern=".+@email.com"
-                title="Please provide only a @email.com address">
+                title="Please provide only a @email.com address"
+                required>
         </div>
         <div class="reemailbox">
-            <label for="re-email">Re-enter email:</label>
+            <label for="re-email">Re-enter email:<span class="req">*</span></label>
             <input
                 type="email"
                 id="re-email"
                 name="re-email"
                 placeholder="john.smith@email.com"
                 pattern=".+@email.com"
-                title="Please provide only a @email.com address">
+                title="Please provide only a @email.com address"
+                required>
         </div>
         <div class="commentbox">
             <label for="comment">Comment or Questions:</label>
