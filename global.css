@@ -324,6 +324,9 @@
 
   figcaption {
     text-align: center;
+    border-style: double;
+    border-color: antiquewhite;
+    border-top-style: none;
     border-radius: 0 0 50px 50px;
     background: linear-gradient(
       to right bottom,
