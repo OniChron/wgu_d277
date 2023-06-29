@@ -127,7 +127,7 @@
     border-radius: 50px;
   }
 
-  .locations:active .dropdown {
+  .locations:hover .dropdown {
     display: block;
   }
     /* This section is for the main content display */
@@ -198,8 +198,7 @@
   }
 /* Start of content images */
   .city_image img {
-    height: 600px;
-    width: 80%;
+    height: 60vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -292,6 +291,7 @@
   }
   .history {
     padding: 15px;
+    margin-top: 40px;
     font-weight: 500;
     grid-area: mt;
   }
