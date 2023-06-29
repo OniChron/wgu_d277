@@ -92,6 +92,9 @@
   .nav_links {
     display: flex;
     gap: 1em;
+    font-size: 2.5vh;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
   }
 
   .nav_links .menu {
@@ -105,24 +108,26 @@
   }
 
   .dropdown {
-    background-color: #0a0041;
     padding: 1em 20;
     position: absolute;
     display: none;
-    width: 140px;
-    z-index: -1;
-    cursor: pointer;
+    width: 180px;
   }
 
   .dropdown a {
     padding: 12px 16px;
     width: 8em;
+    margin-bottom: 2px;
     text-align: center;
     text-decoration: none;
     display: block;
+    font-style: oblique;
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 50px;
   }
 
-  .locations:hover .dropdown {
+  .locations:active .dropdown {
     display: block;
   }
     /* This section is for the main content display */
