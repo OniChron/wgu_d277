@@ -115,6 +115,7 @@
   }
 
   .dropdown a {
+    background-color: cadetblue;
     padding: 12px 16px;
     width: 8em;
     margin-bottom: 2px;
@@ -123,11 +124,10 @@
     display: block;
     font-style: oblique;
     border-style: groove;
-    border-width: 2px;
     border-radius: 50px;
   }
 
-  .locations:hover .dropdown {
+  .locations:active .dropdown {
     display: block;
   }
     /* This section is for the main content display */
@@ -211,6 +211,9 @@
 
   .main_content{
     padding: 10px 25px;
+  }
+  .main_content p {
+    font-size: 3vh;
   }
 
   .first_quote, .second_quote{
