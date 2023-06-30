@@ -127,7 +127,7 @@
     border-radius: 50px;
   }
 
-  .locations:active .dropdown {
+  .locations:hover .dropdown {
     display: block;
   }
     /* This section is for the main content display */
