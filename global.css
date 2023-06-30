@@ -405,8 +405,8 @@
   }
   /* sumbit button customization */
   .submit_btn {
+    padding: 2px;
     font-size: 4vh;
     text-align: right;
-    box-shadow: #777;
-    pointer-events: auto;
+    border-radius: 25px;
   }
