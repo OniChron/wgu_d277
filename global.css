@@ -410,3 +410,10 @@
     text-align: right;
     border-radius: 25px;
   }
+
+/*Sources content*/
+  .last_content {
+    font-size: 2vh;
+    margin-bottom: 68vh;
+    width: 100%;
+  }
