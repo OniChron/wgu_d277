@@ -31,7 +31,9 @@
         </ul>
     </nav>
     <h1 class="form_title">Contact Form</h1>
-    <form class="form_field">
+    <form class="form_field"
+    onsubmit="confirmInput()"
+    action="index.html">
         <div class="firstname_box">
             <label for="first_name">First Name:<span class="req">*</span></label>
             <input
@@ -79,17 +81,27 @@
         <div class="commentbox">
             <label for="comment">Comment or Questions:</label>
             <input
-                for="text"
+                type="text"
                 id="comment"
                 name="comment"
                 placeholder="Enter comment/questions:">
         </div>
         <div class="submit_btn">
-            <input
+            <button>
+                <input
                 class="submit_btn"
                 type="button"
                 value="Submit">
+            </button>
         </div>
     </form>
+    <script>
+        function confirmInput() {
+            first_name = document.forms[0].first_name.value;
+            last_name = document.forms[0].last_name.value;
+            email = document.forms[0].email.value;
+  alert("Hello " + first_name + "! You will now be redirected to Home Page");
+        }
+    </script>
 </body>
 </html>
