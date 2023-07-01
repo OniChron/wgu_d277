@@ -34,7 +34,7 @@
     <h1 class="form_title">Contact Form</h1>
     <form class="form_field"
     onsubmit="confirmInput()"
-    action="index.html">
+    action= "index.html">
         <div class="firstname_box">
             <label for="first_name">First Name:<span class="req">*</span></label>
             <input
@@ -60,6 +60,7 @@
         <div class="emailbox">
             <label for="email">Enter email:<span class="req">*</span></label>
             <input
+                onchange ="CompareFields('email', 're-email', true)";
                 type="email"
                 id="email"
                 name="email"
@@ -71,6 +72,7 @@
         <div class="reemailbox">
             <label for="re-email">Re-enter email:</label>
             <input
+                onchange ="CompareFields('email', 're-email', true)";
                 type="email"
                 id="re-email"
                 name="re-email"
@@ -103,6 +105,28 @@
             email = document.forms[0].email.value;
   alert("Hello " + first_name + "! You will now be redirected to Home Page");
         }
+
+        function CompareFields(f1, f2, caseinsensitive) {
+            var val1 = document.getElementById(f1).value;
+            var val2 = document.getElementById(f2).value;
+            if( caseinsensitive ) {
+                val1 = val1.toUpperCase();
+                val2 = val2.toUpperCase();
+                }
+                val1 = val1.replace(/^\s*/,"");
+                val1 = val1.replace(/\s*$/,"");
+            if( val1.length == 0 ) { return; }
+                val2 = val2.replace(/^\s*/,"");
+                val2 = val2.replace(/\s*$/,"");
+            if( val2.length == 0 ) { return; }
+            if( val1 == val2 ) { return; }
+   // An alert box is used for verification failures.
+   // The message may be changed as appropriate for your installation.
+   // Or, replace alert(...) with your preferred error message system.
+   alert("The form fields need to be identical.");
+}
+</script>
+
     </script>
 </body>
 </html>
